@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="az">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Qafqaz Hüquq və İnteqrasiya Mərkəzi — Bolnisi, Gürcüstan. Hüquqi maarifləndirmə, dil kursları, gənclər və icma təşəbbüsləri.">
+  <meta name="theme-color" content="#291239">
+  <title>QHİM — Qafqaz Hüquq və İnteqrasiya Mərkəzi</title>
+  <style>
+    :root{
+      --purple:#291239;--purple2:#49215f;--purple3:#6a3683;--gold:#f0c75e;--gold2:#ffe5a1;
+      --ink:#251b2c;--muted:#726879;--cream:#faf7f1;--paper:#fff;--line:#eae3ee;
+      --green:#2d7567;--shadow:0 22px 60px rgba(42,18,58,.13);--radius:24px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:#fff;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.65}
+    img{display:block;max-width:100%} button,input,select,textarea{font:inherit} button,a{ -webkit-tap-highlight-color:transparent } a{color:inherit;text-decoration:none} .wrap{width:min(1200px,calc(100% - 42px));margin:auto}
+    .topbar{background:#1b0d26;color:#e8deee;font-size:.82rem}.topbar .wrap{min-height:38px;display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap}.topbar b{color:var(--gold2)}
+    .header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(234,227,238,.86)}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:12px;min-width:255px}.brand-mark{width:52px;height:52px;border-radius:17px;background:linear-gradient(145deg,#3c1d50,#24102f);display:grid;place-items:center;box-shadow:0 10px 24px #32174430;flex:none}.brand-mark svg{width:42px;height:42px}.brand-name{font-weight:950;letter-spacing:.03em;color:var(--purple);line-height:1.04}.brand-name small{display:block;margin-top:5px;color:#7d7284;font-size:.62rem;font-weight:750;letter-spacing:.08em}
+    .navlinks{display:flex;align-items:center;gap:5px}.navlinks button{border:0;background:transparent;color:#584d60;font-size:.89rem;font-weight:800;padding:11px 13px;border-radius:999px;cursor:pointer;transition:.2s}.navlinks button:hover,.navlinks button.active{background:#f3edf6;color:var(--purple2)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:13px 21px;background:var(--gold);color:#2d1d32;font-size:.92rem;font-weight:900;cursor:pointer;transition:.22s;box-shadow:0 8px 22px #c69b3520}.nav-cta:hover,.btn:hover{transform:translateY(-3px);box-shadow:0 14px 28px #c69b3540}.btn.dark{background:var(--purple);color:white}.btn.ghost{background:transparent;border:1px solid #ffffff80;color:white;box-shadow:none}.btn.small{padding:10px 16px;font-size:.84rem}.menu-btn{display:none;background:none;border:0;color:var(--purple);font-size:1.7rem;cursor:pointer}
+    .view{display:none;animation:fadeUp .38s ease both}.view.active{display:block}@keyframes fadeUp{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}
+    .hero{position:relative;isolation:isolate;overflow:hidden;min-height:660px;color:#fff;background:var(--purple);display:flex;align-items:center}.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(27,10,39,.97) 0%,rgba(43,18,60,.88) 40%,rgba(43,18,60,.34) 100%),url('https://crossmedia.az/storage/news/2026_08_27/20260827052731_1_1787839972.jpeg') center 42%/cover no-repeat;transform:scale(1.02)}.hero:after{content:"";position:absolute;z-index:-1;width:500px;height:500px;border:1px solid #f0c75e40;border-radius:50%;right:-120px;bottom:-320px;box-shadow:0 0 0 45px #f0c75e0a,0 0 0 95px #f0c75e08}.hero-content{padding:110px 0 125px;max-width:760px}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:#8f65a8;font-size:.76rem;font-weight:950;letter-spacing:.15em;text-transform:uppercase}.eyebrow:before{content:"";width:27px;height:2px;background:var(--gold)}.hero .eyebrow{color:var(--gold2)}h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.13;letter-spacing:-.04em}h1{font-size:clamp(2.8rem,6.2vw,5.4rem);max-width:790px;margin:20px 0 22px}.hero p{max-width:650px;color:#eee6f2;font-size:1.16rem}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.hero-foot{display:flex;align-items:center;gap:12px;margin-top:42px;color:#d7c9df;font-size:.85rem}.live-dot{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 6px #f0c75e20}
+    .quick-stats{position:relative;margin-top:-44px;z-index:2}.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);background:#fff;border-radius:22px;box-shadow:var(--shadow);padding:26px 30px}.stat{padding:6px 26px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;font-size:2rem;color:var(--purple);line-height:1.2}.stat span{color:var(--muted);font-size:.88rem}
+    .section{padding:88px 0}.soft{background:var(--cream)}.section-head{max-width:740px;margin-bottom:36px}.section-head h2{font-size:clamp(2rem,4vw,3.25rem);margin:13px 0 14px}.section-head p{color:var(--muted);font-size:1.02rem}.split{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}.feature-photo{position:relative}.feature-photo img{width:100%;height:440px;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}.float-note{position:absolute;left:-16px;bottom:24px;max-width:260px;background:var(--gold);padding:17px 20px;border-radius:16px;font-weight:900;color:#302039;box-shadow:var(--shadow)}.copy p{color:#665d6d}.ticks{display:grid;gap:15px;margin-top:24px}.tick{display:flex;gap:13px;align-items:flex-start}.tick-icon{flex:none;width:36px;height:36px;border-radius:12px;background:#f2ebf7;display:grid;place-items:center;color:var(--purple2);font-weight:950}.tick b{display:block;color:var(--ink)}.tick span{color:var(--muted);font-size:.9rem}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:27px;background:#fff;border:1px solid #eee7f1;border-radius:21px;box-shadow:0 9px 28px #31184509;transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.card-icon{width:50px;height:50px;border-radius:16px;background:#f4eef7;color:var(--purple2);display:grid;place-items:center;font-size:1.45rem;margin-bottom:18px}.card h3{font-size:1.17rem;margin-bottom:10px}.card p{font-size:.93rem;color:var(--muted);margin-bottom:0}.tag{display:inline-flex;margin-top:16px;padding:6px 11px;border-radius:999px;background:#f5eff7;color:var(--purple2);font-size:.73rem;font-weight:900;letter-spacing:.03em}
+    .partners{padding:38px 0 54px}.partners-title{text-align:center;color:#8b7f91;font-size:.75rem;font-weight:950;letter-spacing:.15em;text-transform:uppercase;margin-bottom:24px}.partner-row{display:flex;justify-content:center;align-items:center;gap:18px;flex-wrap:wrap}.partner{min-height:90px;min-width:220px;display:flex;align-items:center;justify-content:center;gap:14px;padding:14px 20px;border:1px solid var(--line);border-radius:18px;background:white}.partner img{max-height:55px;max-width:75px;object-fit:contain}.partner span{font-weight:850;font-size:.85rem;line-height:1.25;color:#51465a}.partner small{display:block;color:#897e8e;font-size:.68rem;font-weight:650;margin-top:4px}
+    .notice{border-left:4px solid var(--gold);padding:15px 17px;background:#fbf7eb;border-radius:0 13px 13px 0;color:#63596b;font-size:.9rem;margin-top:18px}.course-layout{display:grid;grid-template-columns:.92fr 1.08fr;gap:24px;align-items:stretch}.course-dark{background:linear-gradient(145deg,#321747,#51256a);border-radius:24px;padding:32px;color:#fff;overflow:hidden;position:relative}.course-dark:after{content:"";position:absolute;right:-85px;bottom:-125px;width:260px;height:260px;border:1px solid #ffffff27;border-radius:50%;box-shadow:0 0 0 30px #ffffff0b,0 0 0 65px #ffffff08}.course-dark>*{position:relative;z-index:1}.course-dark h3{font-size:1.55rem}.course-dark p{color:#ded2e7}.course-list{display:grid;gap:0}.course-item{display:flex;justify-content:space-between;gap:14px;padding:14px 0;border-bottom:1px solid #ffffff24;font-size:.9rem}.course-item:last-child{border:0}.course-item b{color:var(--gold2)}.course-light{background:#fff;border:1px solid var(--line);border-radius:24px;padding:32px}.course-light p{color:var(--muted)}
+    .info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.info-panel{background:white;border:1px solid var(--line);border-radius:20px;padding:26px}.info-panel h3{margin-bottom:9px}.info-panel p{color:var(--muted);margin-bottom:0;font-size:.94rem}
+    .gallery-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:30px}.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.event-card{border:1px solid #eee7f1;border-radius:22px;background:#fff;overflow:hidden;box-shadow:0 10px 26px #2a153808;transition:.24s;display:flex;flex-direction:column}.event-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.event-cover{position:relative;height:230px;background:#e9e1ed;overflow:hidden}.event-cover img{width:100%;height:100%;object-fit:cover;transition:transform .55s}.event-card:hover .event-cover img{transform:scale(1.055)}.event-cover:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#170d22a8)}.event-date{position:absolute;top:14px;left:14px;z-index:1;background:#fff;color:var(--purple);border-radius:12px;padding:7px 10px;font-size:.75rem;font-weight:950;box-shadow:0 5px 15px #0002}.event-content{padding:21px 22px 23px;display:flex;flex-direction:column;align-items:flex-start;flex:1}.event-content h3{font-size:1.15rem;margin:0 0 9px}.event-content p{font-size:.91rem;color:var(--muted);margin:0 0 17px}.event-content button{margin-top:auto;border:0;background:#f4eef7;color:var(--purple2);padding:10px 14px;border-radius:999px;font-size:.83rem;font-weight:950;cursor:pointer;transition:.2s}.event-content button:hover{background:var(--purple);color:#fff}
+    .detail-top{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:24px}.back-btn{border:1px solid var(--line);background:white;padding:10px 15px;border-radius:999px;color:var(--purple);font-weight:850;cursor:pointer}.detail-grid{display:grid;grid-template-columns:1fr .9fr;gap:35px;align-items:start}.detail-main-image{width:100%;height:400px;object-fit:cover;border-radius:23px;box-shadow:var(--shadow)}.detail-copy{padding:8px 0}.detail-copy h2{font-size:clamp(1.9rem,4vw,3rem);margin:13px 0}.detail-copy p{color:#635a69}.detail-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.meta-pill{background:#f4eef7;color:var(--purple2);padding:7px 11px;border-radius:999px;font-size:.78rem;font-weight:900}.detail-points{display:grid;gap:10px;padding:0;list-style:none;margin:20px 0}.detail-points li{display:flex;gap:10px;color:#655c6d}.detail-points li:before{content:"✓";color:var(--green);font-weight:950}.detail-gallery{margin-top:34px}.detail-gallery h3{margin-bottom:15px}.thumb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.thumb-grid button{border:0;padding:0;background:#eee;border-radius:15px;overflow:hidden;cursor:zoom-in}.thumb-grid img{width:100%;height:160px;object-fit:cover;transition:.3s}.thumb-grid button:hover img{transform:scale(1.06)}.source-link{display:inline-flex;color:var(--purple2);font-weight:900;font-size:.88rem;margin-top:14px}.source-link:hover{text-decoration:underline}
+    .register-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:35px;align-items:start}.register-info{background:linear-gradient(145deg,#2b153b,#51266a);border-radius:24px;padding:32px;color:#fff;position:sticky;top:110px}.register-info h2{font-size:2.15rem}.register-info p{color:#e2d8e9}.register-points{display:grid;gap:13px;margin-top:25px}.register-points div{display:flex;gap:12px;align-items:center;font-size:.9rem;color:#f0e9f3}.form-card{background:white;border:1px solid var(--line);border-radius:24px;padding:32px;box-shadow:0 12px 35px #2711390a}.form-card h3{font-size:1.35rem}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:.82rem;font-weight:850;color:#554a5e}.field input,.field select,.field textarea{width:100%;border:1px solid #e5dce9;border-radius:12px;padding:12px 13px;outline:none;background:#fff;color:var(--ink);transition:.2s}.field input:focus,.field select:focus,.field textarea:focus{border-color:#9468aa;box-shadow:0 0 0 3px #8d5ca51a}.field textarea{min-height:105px;resize:vertical}.checkline{display:flex;gap:10px;align-items:flex-start;font-size:.82rem;color:var(--muted);margin:16px 0}.checkline input{margin-top:4px;accent-color:var(--purple2)}.form-help{color:#84798a;font-size:.78rem;margin:13px 0 0}.form-result{display:none;margin-top:18px;padding:16px;border-radius:14px;background:#edf7f2;color:#225a47;font-size:.9rem}.form-result.show{display:block}.form-result a{font-weight:950;text-decoration:underline}.form-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .faq{max-width:900px}.faq details{background:white;border:1px solid var(--line);border-radius:15px;margin:0 0 11px;padding:18px 20px}.faq summary{cursor:pointer;color:var(--purple);font-weight:900;list-style:none;display:flex;justify-content:space-between;gap:15px}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";color:#ae8628;font-size:1.2rem}.faq details[open] summary:after{content:"−"}.faq details p{margin:12px 0 0;color:var(--muted);font-size:.93rem}
+    .contact-hero{background:linear-gradient(125deg,#291239,#4d2364);color:#fff;padding:58px 0}.contact-hero h2{font-size:clamp(2rem,4vw,3rem);margin:12px 0}.contact-hero p{color:#dfd3e7;max-width:680px}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:35px}.contact-tile{display:flex;gap:15px;align-items:flex-start;padding:21px;border:1px solid var(--line);border-radius:17px;background:#fff}.contact-tile .ci{font-size:1.3rem;color:var(--purple2)}.contact-tile small{display:block;color:#867b8c;font-weight:800;margin-bottom:4px}.contact-tile b{color:var(--purple)}
+    .footer{background:#1b0d26;color:#ddd2e5;padding:42px 0 25px}.footer-top{display:flex;justify-content:space-between;gap:25px;align-items:center;flex-wrap:wrap}.footer-brand{display:flex;align-items:center;gap:12px}.footer-brand .brand-name{color:#fff}.footer-brand .brand-name small{color:#b7a8c1}.footer-links{display:flex;gap:20px;flex-wrap:wrap;font-size:.84rem;font-weight:800}.footer-links button{border:0;background:none;color:#e4d9eb;cursor:pointer}.footer-links button:hover{color:var(--gold)}.footer-note{border-top:1px solid #ffffff21;margin-top:28px;padding-top:18px;color:#a99bb3;font-size:.76rem}
+    .lightbox{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:25px;background:#14091deb}.lightbox.open{display:flex}.lightbox img{max-width:min(1100px,94vw);max-height:86vh;object-fit:contain;border-radius:12px;box-shadow:0 25px 90px #0008}.lightbox-close{position:absolute;top:20px;right:24px;border:1px solid #ffffff80;background:#291239;color:#fff;width:45px;height:45px;border-radius:50%;font-size:1.5rem;cursor:pointer}
+    .toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;z-index:300;background:#24122f;color:white;padding:12px 18px;border-radius:999px;box-shadow:var(--shadow);font-size:.87rem;font-weight:850;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(max-width:1000px){.navlinks{gap:0}.navlinks button{padding:10px 9px;font-size:.82rem}.nav-cta{padding:11px 15px;font-size:.82rem}.gallery-grid{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:760px){.wrap{width:min(100% - 30px,1200px)}.topbar .wrap{justify-content:center}.nav{height:72px}.brand{min-width:0}.brand-mark{width:45px;height:45px}.brand-name{font-size:.88rem}.brand-name small{font-size:.55rem}.menu-btn{display:block;margin-left:auto}.navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:13px 15px 18px;box-shadow:0 14px 25px #29123912;flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.navlinks button{text-align:left;padding:13px}.nav-cta{display:none}.hero{min-height:610px}.hero-content{padding:85px 0 100px}.hero:before{background:linear-gradient(90deg,#1e0b2bf2,#321747b5 72%,#32174772),url('https://crossmedia.az/storage/news/2026_08_27/20260827052731_1_1787839972.jpeg') center/cover}.stat-grid{grid-template-columns:1fr;padding:18px 22px}.stat{border-right:0;border-bottom:1px solid var(--line);padding:14px 5px}.stat:last-child{border:0}.section{padding:68px 0}.split,.course-layout,.detail-grid,.register-wrap,.contact-grid{grid-template-columns:1fr;gap:25px}.feature-photo img{height:340px}.float-note{left:12px;bottom:12px}.cards,.info-grid{grid-template-columns:1fr}.gallery-head{display:block}.gallery-grid{grid-template-columns:1fr}.event-cover{height:245px}.register-info{position:static}.form-card{padding:23px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.detail-main-image{height:310px}.thumb-grid{grid-template-columns:repeat(2,1fr)}.thumb-grid img{height:130px}.partners{padding:28px 0 38px}.partner{width:100%;justify-content:flex-start}.footer-top{align-items:flex-start}.footer-links{gap:12px 18px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+  
+
+/* ================================================================
+   QHİM VISUAL REFINEMENT — editorial, warm and more human-led
+   ================================================================ */
+:root{
+  --purple:#281b32;
+  --purple2:#49314f;
+  --purple3:#6b4a70;
+  --gold:#c6a15d;
+  --gold2:#ead8ad;
+  --ink:#29232e;
+  --muted:#77717c;
+  --cream:#f6f3ee;
+  --paper:#fffefa;
+  --line:#e9e2d9;
+  --green:#48766b;
+  --shadow:0 24px 70px rgba(37,25,43,.11);
+  --radius:18px;
+}
+html{scroll-padding-top:100px;background:var(--paper)}
+body{background:var(--paper);color:var(--ink);font-family:Inter,"Segoe UI",Arial,sans-serif;letter-spacing:.002em}
+::selection{background:#e9d8b2;color:#281b32}
+:focus-visible{outline:3px solid #c6a15d;outline-offset:3px}
+.wrap{width:min(1240px,calc(100% - 52px))}
+.topbar{background:#211729;color:#e9e1e9;font-size:.76rem;letter-spacing:.035em}
+.topbar .wrap{min-height:38px}
+.topbar span:first-child{display:flex;align-items:center;gap:8px}
+.topbar span:first-child:first-letter{color:var(--gold)}
+.topbar b{color:#e4c98f;font-weight:800}
+.header{background:rgba(255,254,250,.94);border-bottom:1px solid #e9e2d9;box-shadow:0 4px 24px rgba(30,20,35,.035)}
+.nav{height:88px;gap:26px}
+.brand{min-width:285px;gap:13px}
+.brand-mark,.brand-mark.qhim-official-mark{
+  width:64px;height:64px;flex:none;border-radius:50%;
+  background-color:#523653;
+  background-image:url('https://diaspor.gov.az/upload/20250721054457_40e723d1-73ba-4a86-8267-d49659e5276a.jpeg');
+  background-repeat:no-repeat;background-size:370% auto;background-position:22% 20%;
+  border:3px solid #fff;box-shadow:0 0 0 1px #d8c5a2,0 7px 18px rgba(38,25,44,.13);
+  overflow:hidden;display:block;
+}
+.brand-mark svg{display:none}
+.brand-name{font-size:1rem;font-weight:900;letter-spacing:.045em;color:#302238}
+.brand-name small{font-size:.59rem;letter-spacing:.1em;color:#827783;font-weight:750;line-height:1.35;margin-top:6px}
+.navlinks{gap:3px}
+.navlinks button{font-size:.81rem;font-weight:800;letter-spacing:.025em;color:#625867;padding:11px 14px;border-radius:7px}
+.navlinks button:hover,.navlinks button.active{background:#f1ebe3;color:#33243b}
+.nav-cta,.btn{border-radius:7px;padding:13px 20px;background:#c6a15d;color:#251c2d;font-size:.87rem;font-weight:850;letter-spacing:.015em;box-shadow:none}
+.nav-cta:hover,.btn:hover{transform:translateY(-2px);background:#d3b477;box-shadow:0 9px 22px rgba(93,68,33,.15)}
+.btn.dark{background:#33223d;color:#fff}
+.btn.dark:hover{background:#49314f}
+.btn.ghost{border:1px solid rgba(255,255,255,.62);border-radius:7px;color:#fff;background:rgba(255,255,255,.07)}
+.menu-btn{font-size:1.55rem}
+.view{animation:fadeUp .32s ease both}
+.hero{min-height:700px;background:#241a2c}
+.hero:before{
+  background:
+    linear-gradient(90deg,rgba(31,21,37,.97) 0%,rgba(39,26,46,.92) 35%,rgba(39,26,46,.58) 67%,rgba(39,26,46,.3) 100%),
+    linear-gradient(0deg,rgba(24,16,29,.36),transparent 50%),
+    url('https://crossmedia.az/storage/news/2026_08_27/20260827052731_1_1787839972.jpeg') center 43%/cover no-repeat;
+  transform:scale(1.015);
+}
+.hero:after{
+  content:"BOLNİSİ  /  GÜRCÜSTAN\A HÜQUQ  ·  TƏHSİL  ·  İNTEQRASİYA";
+  white-space:pre;position:absolute;z-index:-1;right:7.5%;bottom:82px;width:245px;
+  padding:19px 20px 18px;border:1px solid rgba(234,216,173,.6);border-left:3px solid var(--gold);
+  border-radius:2px;background:rgba(35,24,42,.48);backdrop-filter:blur(9px);
+  color:#f2e9d9;font-size:.65rem;font-weight:800;letter-spacing:.14em;line-height:2.1;
+  box-shadow:0 16px 44px rgba(0,0,0,.16);
+}
+.hero-content{padding:126px 0 150px;max-width:730px;position:relative}
+.hero .eyebrow{font-size:.69rem;letter-spacing:.19em;color:#e8d6af}
+.hero .eyebrow:before{width:34px;background:#c6a15d}
+h1,h2,h3{letter-spacing:-.035em}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(3.15rem,6.4vw,5.65rem);font-weight:500;line-height:1.02;max-width:700px;letter-spacing:-.045em;margin:24px 0 26px}
+.hero p{font-size:1.08rem;line-height:1.85;max-width:610px;color:#e5dfe6}
+.hero-actions{gap:12px;margin-top:34px}
+.hero-foot{font-size:.78rem;letter-spacing:.025em;color:#d4c8d6;margin-top:44px}
+.live-dot{background:#d9bb80;box-shadow:0 0 0 6px rgba(217,187,128,.14)}
+.quick-stats{margin-top:-52px}
+.stat-grid{border-radius:12px;box-shadow:0 18px 55px rgba(37,25,43,.1);padding:25px 32px;border:1px solid #eee7dc;background:#fffefa}
+.stat{padding:7px 28px;border-right:1px solid #e9e2d9}
+.stat strong{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:2.35rem;color:#3b2b42;letter-spacing:-.04em}
+.stat span{font-size:.82rem;color:#79717c;line-height:1.5;display:block;max-width:240px}
+.section{padding:100px 0}
+.soft{background:#f6f3ee}
+.section-head{max-width:770px;margin-bottom:42px}
+.section-head h2,.copy h2{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:clamp(2.2rem,4.1vw,3.35rem);line-height:1.08;letter-spacing:-.045em;color:#302438;margin:16px 0 18px}
+.section-head p,.copy p{font-size:.98rem;line-height:1.85;color:#716a75}
+.eyebrow{font-size:.68rem;font-weight:900;letter-spacing:.18em;color:#886d87}
+.eyebrow:before{background:#c6a15d}
+.split{gap:72px;grid-template-columns:1fr .96fr}
+.feature-photo img{height:490px;border-radius:5px;box-shadow:0 25px 60px rgba(37,25,43,.15);object-position:center}
+.feature-photo:before{content:"";position:absolute;z-index:-1;left:-17px;top:-17px;width:46%;height:42%;border-left:1px solid #c6a15d;border-top:1px solid #c6a15d}
+.float-note{left:auto;right:-22px;bottom:26px;max-width:280px;padding:18px 22px;border-radius:3px;background:#e7d7b8;color:#382a3d;font-family:Georgia,serif;font-size:1.08rem;font-weight:500;line-height:1.35;box-shadow:0 15px 35px rgba(40,27,35,.13)}
+.copy h2{max-width:620px}
+.tick{gap:15px}
+.tick-icon{width:38px;height:38px;border-radius:50%;background:#eee8df;color:#70536f;font-size:1.03rem}
+.tick b{font-size:.94rem;font-weight:850}
+.tick span{font-size:.84rem;line-height:1.6}
+.cards{gap:18px}
+.card{padding:29px 28px 30px;border:1px solid #eae3da;border-radius:6px;box-shadow:0 8px 24px rgba(47,34,54,.035);background:#fffefa}
+.card:hover{transform:translateY(-4px);box-shadow:0 19px 42px rgba(47,34,54,.09);border-color:#d8c7a6}
+.card-icon{width:48px;height:48px;border-radius:50%;background:#f1ebe3;color:#5d4264;font-size:1.3rem}
+.card h3{font-family:Georgia,"Times New Roman",serif;font-size:1.35rem;font-weight:500;letter-spacing:-.015em;color:#35273d}
+.card p{line-height:1.75;font-size:.88rem}
+.tag{border-radius:3px;background:#f1ebe3;color:#6b5267;font-size:.68rem;letter-spacing:.05em;text-transform:uppercase;padding:7px 10px}
+.partners{padding:54px 0 72px;background:#fffefa}
+.partners-title{font-size:.67rem;letter-spacing:.18em;color:#887f88}
+.partner{border-radius:5px;border-color:#e8e1d7;background:#fff;padding:18px 22px;min-width:260px;transition:.2s}
+.partner:hover{border-color:#c6a15d;transform:translateY(-2px)}
+.partner img{max-height:51px}
+.partner span{font-size:.79rem;color:#403447}
+.partner small{font-size:.67rem;line-height:1.5}
+.info-grid{gap:16px}
+.info-panel{border-radius:5px;border-color:#e9e2d9;background:#fffefa;padding:29px}
+.info-panel h3{font-family:Georgia,serif;font-weight:500;font-size:1.35rem;color:#392b40}
+.info-panel p{font-size:.9rem;line-height:1.8}
+.course-layout{gap:18px}
+.course-dark{border-radius:5px;background:linear-gradient(145deg,#2e2038,#4d3554);padding:38px}
+.course-dark h3{font-family:Georgia,serif;font-size:1.75rem;font-weight:500}
+.course-light{border-radius:5px;border-color:#e8e0d7;padding:36px;background:#fffefa}
+.gallery-head{margin-bottom:36px;align-items:flex-end}
+.gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.event-card{border:1px solid #e8e1d8;border-radius:5px;box-shadow:0 7px 23px rgba(43,30,48,.04);background:#fffefa}
+.event-card:hover{transform:translateY(-5px);box-shadow:0 20px 48px rgba(43,30,48,.11);border-color:#cfbb92}
+.event-cover{height:255px;background:#e9e2d8}
+.event-cover img{transition:transform .65s cubic-bezier(.2,.65,.25,1)}
+.event-cover:after{background:linear-gradient(0deg,rgba(27,20,32,.65),transparent 55%)}
+.event-date{border-radius:3px;background:#fffefa;color:#403047;padding:8px 11px;font-size:.69rem;letter-spacing:.03em}
+.event-content{padding:24px 24px 26px}
+.event-content h3{font-family:Georgia,"Times New Roman",serif;font-size:1.32rem;font-weight:500;line-height:1.17;letter-spacing:-.02em;color:#33263a}
+.event-content p{font-size:.86rem;line-height:1.75;color:#79717b}
+.event-content button{border-radius:3px;padding:11px 13px;background:#f0e9df;color:#4a3650;font-weight:850;font-size:.78rem;letter-spacing:.02em}
+.event-content button:hover{background:#e6d7bd}
+.detail-grid{grid-template-columns:1fr .92fr;gap:42px}
+.detail-copy h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:500;line-height:1.08;letter-spacing:-.04em;color:#302438}
+.detail-meta{margin:18px 0 22px}
+.meta-pill{border-radius:3px;background:#f0e9df;color:#624b65;font-size:.7rem;letter-spacing:.03em;padding:8px 11px}
+.source-link{color:#5b3f61;border-bottom:1px solid #c6a15d;padding-bottom:4px;font-size:.83rem}
+.source-link:hover{color:#302438}
+.detail-top{margin-bottom:28px}
+.back-btn{border-radius:3px;border-color:#ded5c9;background:#fffefa;color:#594b5c;padding:10px 14px;font-weight:800}
+.detail-title,.event-detail h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:500;line-height:1.05;color:#302438}
+.detail-main-image{border-radius:5px;box-shadow:0 20px 50px rgba(37,25,43,.13)}
+.detail-points li{line-height:1.7;font-size:.9rem}
+.thumb-grid button{border-radius:4px}
+.thumb-grid img{height:180px}
+.register-wrap{gap:20px}
+.register-info{border-radius:5px;background:linear-gradient(145deg,#2c2036,#4f3657);padding:38px}
+.register-info h2{font-family:Georgia,serif;font-weight:500;font-size:2.5rem;letter-spacing:-.04em}
+.form-card{border-radius:5px;border:1px solid #e7dfd6;background:#fffefa;padding:36px;box-shadow:0 16px 42px rgba(43,30,48,.05)}
+.form-card h3{font-family:Georgia,serif;font-weight:500;font-size:1.65rem;color:#33263a}
+.field label{color:#524658;font-size:.78rem;font-weight:850;letter-spacing:.02em}
+.field input,.field select,.field textarea{border:1px solid #e4ddd5;border-radius:4px;background:#fff;padding:13px 14px;color:#332a36;font-size:.91rem;transition:border-color .2s,box-shadow .2s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:#ad8a53;box-shadow:0 0 0 3px rgba(198,161,93,.15)}
+.field textarea{min-height:125px}
+.checkline{font-size:.8rem;line-height:1.6;color:#6b626d}
+.form-help{font-size:.76rem;line-height:1.7;color:#827a83}
+.contact-hero{background:linear-gradient(100deg,#2b1e35,#533a59);padding:92px 0 98px;color:#fff}
+.contact-hero h2{font-family:Georgia,serif;font-weight:500;font-size:clamp(2.8rem,5vw,4.5rem);letter-spacing:-.04em}
+.contact-hero p{color:#e1d8e2;max-width:630px;line-height:1.8}
+.contact-grid{gap:14px}
+.contact-tile{border-radius:4px;border-color:#e7dfd6;background:#fffefa;padding:22px;transition:.2s}
+.contact-tile:hover{border-color:#c6a15d;transform:translateY(-2px)}
+.contact-tile .ci{width:42px;height:42px;border-radius:50%;background:#f0e9df;color:#604965}
+.contact-tile small{font-size:.68rem;letter-spacing:.09em;text-transform:uppercase;color:#928792}
+.contact-tile b{font-size:.91rem;line-height:1.5;color:#3a2d40}
+.footer{background:#211729;color:#e9e0ea;padding:48px 0 28px}
+.footer .brand-name{color:#fff}
+.footer .brand-name small{color:#c7b8c9}
+.footer .brand-mark,.footer .brand-mark.qhim-official-mark{border-color:#392a42;box-shadow:0 0 0 1px rgba(234,216,173,.65)}
+.footer-links{gap:6px}
+.footer-links button{border-radius:3px;color:#d9cdda;font-size:.78rem}
+.footer-links button:hover{background:#ffffff10;color:#fff}
+.footer-note{border-top:1px solid rgba(255,255,255,.13);color:#b9adbd;font-size:.74rem;line-height:1.75;margin-top:28px;padding-top:22px}
+.lightbox{background:rgba(20,14,24,.94);backdrop-filter:blur(10px)}
+.lightbox img{border-radius:4px;box-shadow:0 25px 75px rgba(0,0,0,.35)}
+.lightbox-close{border-radius:50%;background:#fff;color:#2d2035}
+.toast{border-radius:4px;background:#2d2035}
+img.image-unavailable{background:linear-gradient(135deg,#eee8df,#e2d8ca);object-fit:contain;color:#5e5260;font-size:.8rem;min-height:110px}
+.notice{border-left-color:#c6a15d;background:#f5f0e6;color:#655d68;border-radius:0 4px 4px 0}
+
+/* The official mark is a photograph crop, so keep its source legible and fallback-friendly. */
+.qhim-official-mark{position:relative}
+.qhim-official-mark:after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(255,255,255,.2);pointer-events:none}
+@media(max-width:1100px){
+  .brand{min-width:245px}.navlinks button{padding:10px 9px;font-size:.77rem}.nav{gap:12px}.hero:after{right:4%;bottom:48px}
+}
+@media(max-width:900px){
+  .wrap{width:min(100% - 38px,1240px)}.split{gap:45px}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero:after{right:4%;width:215px}
+}
+@media(max-width:760px){
+  .wrap{width:min(100% - 30px,1240px)}.topbar .wrap{justify-content:center;min-height:34px;text-align:center;font-size:.69rem}.nav{height:76px}.brand{gap:9px;min-width:0}.brand-mark,.brand-mark.qhim-official-mark{width:51px;height:51px;border-width:2px;background-size:370% auto}.brand-name{font-size:.88rem}.brand-name small{font-size:.49rem;letter-spacing:.07em;max-width:225px}.nav-cta{padding:10px 12px;font-size:.74rem}.menu-btn{margin-left:auto}.navlinks{top:76px;background:#fffefa;box-shadow:0 15px 30px rgba(32,20,36,.1)}
+  .hero{min-height:650px}.hero:before{background:linear-gradient(90deg,rgba(31,21,37,.95),rgba(39,26,46,.74)),url('https://crossmedia.az/storage/news/2026_08_27/20260827052731_1_1787839972.jpeg') center/cover no-repeat}.hero:after{display:none}.hero-content{padding:92px 0 130px}h1{font-size:clamp(2.75rem,12vw,4.15rem);line-height:1.04}.hero p{font-size:1rem;line-height:1.75}.hero-foot{font-size:.72rem;margin-top:34px}.quick-stats{margin-top:-38px}.stat-grid{grid-template-columns:1fr;padding:13px 20px;border-radius:7px}.stat{display:grid;grid-template-columns:95px 1fr;align-items:center;border-right:0;border-bottom:1px solid #e9e2d9;padding:13px 5px;gap:10px}.stat:last-child{border:0}.stat strong{font-size:1.75rem}.stat span{font-size:.78rem}
+  .section{padding:70px 0}.section-head{margin-bottom:30px}.split{grid-template-columns:1fr;gap:38px}.feature-photo img{height:350px}.feature-photo:before{left:-8px;top:-8px}.float-note{right:8px;bottom:12px;max-width:220px;font-size:.95rem;padding:14px 16px}.cards{grid-template-columns:1fr}.card{padding:24px}.partners{padding:32px 0 48px}.partner{width:100%;justify-content:flex-start}.course-layout{grid-template-columns:1fr}.gallery-head{display:block}.gallery-grid{grid-template-columns:1fr;gap:17px}.event-cover{height:245px}.event-content{padding:21px}.thumb-grid{grid-template-columns:repeat(2,1fr)}.thumb-grid img{height:135px}.detail-grid{grid-template-columns:1fr;gap:27px}.detail-main-image{height:300px}.register-wrap{grid-template-columns:1fr}.register-info,.form-card{padding:25px}.contact-grid{grid-template-columns:1fr}.footer-top{gap:24px}.footer-links{flex-wrap:wrap}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+  </style>
+  <meta property="og:title" content="QHİM — Qafqaz Hüquq və İnteqrasiya Mərkəzi">
+  <meta property="og:description" content="Bolnisidə hüquqi maarifləndirmə, təhsil, gənclər və icma təşəbbüsləri.">
+</head>
+<body>
+  <div class="topbar"><div class="wrap"><span>📍 Bolnisi, Gürcüstan</span><span><b>Telefon:</b> +995 571 24 24 87 &nbsp; · &nbsp; <b>E-poçt:</b> qhimbolnisi@gmail.com</span></div></div>
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="QHİM ana səhifə" data-go="home">
+        <span class="brand-mark qhim-official-mark" role="img" aria-label="QHİM-in bannerində istifadə olunan orijinal günəş və dağ nişanı"></span>
+        <span class="brand-name">QHİM<small>QAFQAZ HÜQUQ VƏ İNTEQRASİYA MƏRKƏZİ</small></span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menyunu aç" aria-expanded="false">☰</button>
+      <nav class="navlinks" id="navLinks" aria-label="Əsas menyu">
+        <button class="active" data-view="home">Ana səhifə</button>
+        <button data-view="info">Məlumatlar</button>
+        <button data-view="gallery">Qalereya</button>
+        <button data-view="registration">Qeydiyyat</button>
+        <button data-view="contact">Əlaqə</button>
+      </nav>
+      <button class="nav-cta" data-view="registration">Müraciət et <span>↗</span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ANA SƏHİFƏ -->
+    <section class="view active" id="view-home" data-page="home">
+      <div class="hero"><div class="wrap"><div class="hero-content">
+        <span class="eyebrow">Hüquq · Təhsil · İnteqrasiya</span>
+        <h1>Birlikdə öyrənir, inkişaf edir və güclənirik.</h1>
+        <p>Qafqaz Hüquq və İnteqrasiya Mərkəzi Bolnisidə hüquqi maarifləndirmə, təhsil imkanları, gənclərin inkişafı və icma inteqrasiyası istiqamətlərində fəaliyyət göstərir.</p>
+        <div class="hero-actions"><button class="btn" data-view="info">Mərkəz haqqında <span>→</span></button><button class="btn ghost" data-view="gallery">Tədbirlərə bax <span>↗</span></button></div>
+        <div class="hero-foot"><span class="live-dot"></span> Açıq mənbələrdə yayımlanan real fəaliyyət və tədbirlər əsasında</div>
+      </div></div></div>
+      <div class="quick-stats"><div class="wrap"><div class="stat-grid">
+        <div class="stat"><strong>2021</strong><span>Mərkəzin fəaliyyətə başladığı il</span></div>
+        <div class="stat"><strong>700+</strong><span>2024-cü ilin iyununa qədər kurslardan faydalananlar</span></div>
+        <div class="stat"><strong>20 kənd</strong><span>2024-cü il gənclər yay düşərgəsinin əhatə dairəsi</span></div>
+      </div></div></div>
+      <section class="section"><div class="wrap split">
+        <div class="feature-photo"><img src="https://interpress.ge/web/uploads/images/IMG_2411.jpeg" alt="Bolnisidə QHİM-də pulsuz hüquqi xidmət göstərilməsi" loading="lazy"><div class="float-note">Hər kəs üçün məlumat, təhsil və dəstək imkanları</div></div>
+        <div class="copy"><span class="eyebrow">Mərkəz haqqında</span><h2>İcmanın yanında olan təhsil və hüquqi dəstək məkanı.</h2><p>QHİM 2021-ci ildən Bolnisi rayonunda fəaliyyət göstərir. Açıq mənbələrdə mərkəzin dil kursları, ödənişsiz hüquqi xidmətlər, gənclər üçün maarifləndirici görüşlər və sosial layihələr təşkil etdiyi qeyd olunur.</p><div class="ticks">
+          <div class="tick"><span class="tick-icon">⚖</span><div><b>Hüquqi maarifləndirmə</b><span>Hüquqlar, müraciətlər və gündəlik hüquqi məsələlər üzrə məlumatlandırma.</span></div></div>
+          <div class="tick"><span class="tick-icon">✦</span><div><b>Təhsil və bacarıqlar</b><span>Dil məşğələləri, təlimlər və gənclərin potensialının inkişafı.</span></div></div>
+          <div class="tick"><span class="tick-icon">◎</span><div><b>İcma inteqrasiyası</b><span>Görüşlər, mədəni fəaliyyətlər və müxtəlif icmalar arasında əməkdaşlıq.</span></div></div>
+        </div><div style="margin-top:25px"><button class="btn dark" data-view="info">Ətraflı məlumat <span>→</span></button></div></div>
+      </div></section>
+      <section class="section soft"><div class="wrap"><div class="section-head"><span class="eyebrow">Əsas istiqamətlər</span><h2>İnsanlara və icmaya yönələn fəaliyyət.</h2><p>Mərkəzin mediada və rəsmi qurumların materiallarında göstərilən əsas fəaliyyət sahələri.</p></div><div class="cards">
+        <article class="card"><div class="card-icon">⚖</div><h3>Hüquqi dəstək</h3><p>Hüquqi məsələlər barədə ilkin məlumat, ərizə və müraciətlərin hazırlanması üzrə kömək və istiqamətləndirmə.</p><span class="tag">Hüquqi maarifləndirmə</span></article>
+        <article class="card"><div class="card-icon">文</div><h3>Dil kursları</h3><p>Azərbaycan, gürcü və ingilis dilləri üzrə məşğələlər və dil biliklərinin inkişafı üçün tədris fəaliyyəti.</p><span class="tag">Təhsil</span></article>
+        <article class="card"><div class="card-icon">✦</div><h3>Gənclərin inkişafı</h3><p>Yay düşərgələri, təlimlər, rəqəmsal bacarıqlar və gənclərin aktiv iştirakı üçün görüşlər.</p><span class="tag">Gənclər</span></article>
+      </div></div></section>
+      <div class="partners"><div class="wrap"><div class="partners-title">Açıq mənbələrdə dəstək və əməkdaşlıq kontekstində adı çəkilən qurumlar</div><div class="partner-row">
+        <a class="partner" href="https://diaspor.gov.az/" target="_blank" rel="noopener"><img src="https://www.azernews.az/media/2021/08/28/diaspora_ish_uzre_dovlet_komitesi_logo_101018.jpg" alt="Azərbaycan Respublikasının Diasporla İş üzrə Dövlət Komitəsinin loqosu"><span>Azərbaycan Respublikasının Diasporla İş üzrə Dövlət Komitəsi<small>Fəaliyyətə dəstək haqqında rəsmi məlumat</small></span></a>
+        <a class="partner" href="https://tika.gov.tr/" target="_blank" rel="noopener"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tika_logo.svg" alt="TİKA loqosu"><span>TİKA<small>2023-cü ildən əməkdaşlıq barədə xəbər</small></span></a>
+      </div></div></div>
+    </section>
+
+    <!-- MƏLUMATLAR -->
+    <section class="view" id="view-info" data-page="info">
+      <section class="section"><div class="wrap"><div class="section-head"><span class="eyebrow">Məlumatlar</span><h2>Qafqaz Hüquq və İnteqrasiya Mərkəzi</h2><p>Bu bölmədə mərkəzin məqsədi, fəaliyyəti, tədris istiqamətləri və xidmətləri barədə məlumatlar toplanıb. Tədbirlərin fotoşəkilləri ayrıca qalereyada yerləşir.</p></div>
+        <div class="split"><div class="copy"><h3>Yaranma və fəaliyyət</h3><p>Qafqaz Hüquq və İnteqrasiya Mərkəzi 2021-ci ildə Azərbaycan Respublikasının Diasporla İş üzrə Dövlət Komitəsinin dəstəyi ilə Bolnisi rayonunda fəaliyyətə başlayıb. 2024-cü ilin iyununda yayımlanan rəsmi məlumatda Azərbaycan, gürcü, ingilis dili və rəsm kurslarından 700-dən çox şagird, müəllim, tələbə və gəncin faydalandığı bildirilirdi.</p><p>Mərkəzin fəaliyyəti təhsil imkanlarını genişləndirməyə, hüquqi bilikləri artırmağa, gəncləri təşəbbüslərə cəlb etməyə və icma daxilində inteqrasiyanı gücləndirməyə yönəlib.</p><div class="notice">700+ göstəricisi 14 iyun 2024-cü il tarixli rəsmi xəbərdə qeyd olunan tarixi göstəricidir; hazırkı iştirakçı sayı kimi qəbul edilməməlidir.</div></div><div class="feature-photo"><img src="https://diaspor.gov.az/upload/20250721054551_fa6d5481-c2fb-477c-bbbe-9724586339f3.jpeg" alt="QHİM tədris ilinin yekun tədbirində mərkəzin banneri" loading="lazy"></div></div>
+      </div></section>
+      <section class="section soft"><div class="wrap"><div class="section-head"><span class="eyebrow">Fəaliyyət istiqamətləri</span><h2>Əsas xidmət və layihələr.</h2></div><div class="info-grid">
+        <article class="info-panel"><div class="card-icon">⚖</div><h3>Ödənişsiz hüquqi yardım</h3><p>Açıq mənbələrdə mərkəzin hüquqi konsultasiya, dövlət qurumlarına məktub və müraciətlərin hazırlanması, eləcə də müxtəlif hüquqi mövzular üzrə istiqamətləndirmə göstərdiyi bildirilir. Konkret işin qəbulunu və xidmətin həcmini mərkəzlə öncədən dəqiqləşdirmək lazımdır.</p></article>
+        <article class="info-panel"><div class="card-icon">文</div><h3>Dil və təhsil kursları</h3><p>Rəsmi elanlarda Azərbaycan və gürcü dili kursları, həmçinin ingilis dili məşğələləri göstərilib. 2026-cı il sentyabr elanında Azərbaycan və gürcü dilləri ödənişsiz, ingilis dili və rəsm məşğələləri isə ödənişli kimi təqdim olunmuşdu.</p></article>
+        <article class="info-panel"><div class="card-icon">✦</div><h3>Uşaq və gənclərlə iş</h3><p>Uşaq hüquqları, sosial bacarıqlar, təhlükəsiz mühit, erkən nikah və zorakılığın qarşısının alınması kimi mövzularda maarifləndirici görüş və təlimlərin keçirildiyi rəsmi xəbərlərdə qeyd olunur.</p></article>
+        <article class="info-panel"><div class="card-icon">◎</div><h3>Mədəniyyət və icma inteqrasiyası</h3><p>Görüşlər, bayram və anım tədbirləri, sərgilər, yay düşərgələri və icma mərkəzləri ilə əməkdaşlıq mərkəzin fəaliyyətinin ictimaiyyətə açıq hissəsidir.</p></article>
+      </div></div></section>
+      <section class="section"><div class="wrap"><div class="section-head"><span class="eyebrow">Kurslar</span><h2>Tədris istiqamətləri və qeydiyyat barədə.</h2><p>Ən son tapılan kurs elanı 3 sentyabr 2026-cı il tarixlidir. Həmin elandakı qeydiyyat müddəti 1–10 sentyabr 2026 olduğundan artıq başa çatıb.</p></div><div class="course-layout">
+        <div class="course-dark"><h3>2026-cı il elanında göstərilən istiqamətlər</h3><p>Dərslər həftədə iki dəfə, hər biri iki saat olmaqla planlaşdırılmışdı.</p><div class="course-list"><div class="course-item"><span>Azərbaycan dili</span><b>Ödənişsiz</b></div><div class="course-item"><span>Gürcü dili</span><b>Ödənişsiz</b></div><div class="course-item"><span>İngilis dili</span><b>Ödənişli</b></div><div class="course-item"><span>Rəsm məşğələləri</span><b>Ödənişli*</b></div></div><p style="font-size:.78rem;margin:15px 0 0">*Elana əsasən rəsm dərsləri məktəb müəllimləri üçün nəzərdə tutulmuşdu.</p></div>
+        <div class="course-light"><h3>Yeni qeydiyyat necə aparılır?</h3><p>Yeni qrupların açılması, dərs cədvəli, qiymətlər və qəbul tarixləri dəyişə bilər. Buna görə əvvəlcə mərkəzlə telefon və ya e-poçt vasitəsilə əlaqə saxlamaq tövsiyə olunur.</p><div class="notice">Saytdakı qeydiyyat forması yeni kurs və proqramlarla maraqlananlar üçün ilkin müraciət formasıdır. Bu forma rəsmi qəbul qərarı və ya yer təsdiqi deyil.</div><button class="btn dark" data-view="registration" style="margin-top:20px">İlkin müraciət et <span>→</span></button></div>
+      </div></div></section>
+      <section class="section soft"><div class="wrap"><div class="section-head"><span class="eyebrow">Tez-tez verilən suallar</span><h2>Tez cavab tapın.</h2></div><div class="faq">
+        <details><summary>Mərkəz harada yerləşir?</summary><p>QHİM-in açıq kurs elanında ünvan Bolnisi şəhəri, Sulxan-Saba Orbeliani küçəsi 105 kimi göstərilib.</p></details>
+        <details><summary>Hansı kurslar var?</summary><p>Ən son tapılan elanda Azərbaycan, gürcü və ingilis dili kursları, eləcə də rəsm məşğələləri göstərilib. Cari qruplar barədə mərkəzlə əlaqə saxlayın.</p></details>
+        <details><summary>Hüquqi yardım üçün necə müraciət edim?</summary><p>Telefon və ya e-poçt vasitəsilə əvvəlcədən əlaqə saxlayaraq müraciətinizin mövzusunu və qəbul imkanını dəqiqləşdirin.</p></details>
+        <details><summary>Saytdakı qeydiyyat forması mərkəzə birbaşa göndərilirmi?</summary><p>Xeyr. Bu prototip müraciəti istifadə etdiyiniz brauzerdə saxlayır. Mərkəzə göndərmək üçün formadan sonra açılan e-poçt düyməsini istifadə edib məktubu özünüz göndərməlisiniz.</p></details>
+      </div></div></section>
+    </section>
+
+    <!-- QALEREYA -->
+    <section class="view" id="view-gallery" data-page="gallery">
+      <section class="section soft"><div class="wrap">
+        <div class="gallery-head"><div class="section-head" style="margin-bottom:0"><span class="eyebrow">Fotoqalereya</span><h2>Beş tədbir. Beş ayrı hekayə.</h2><p>Hər tədbirin üzərinə klikləyərək həmin günün proqramı, iştirakçıları və əlavə fotoşəkilləri ilə tanış olun.</p></div><span class="tag">5 tədbir · 2024–2026</span></div>
+        <div class="gallery-grid" id="eventGrid" aria-live="polite"></div>
+        <p class="form-help" style="margin-top:20px">Fotolar rəsmi qurumların və xəbər mənbələrinin yayımladığı materiallardan götürülüb. Hər fotoşəkilin mənbə linki tədbir səhifəsində göstərilir.</p>
+      </div></section>
+    </section>
+
+    <!-- TƏDBİRİN ƏTRAFLI SƏHİFƏSİ: EYNİ HTML DAXİLİNDƏ -->
+    <section class="view" id="view-event" data-page="event">
+      <section class="section"><div class="wrap">
+        <div class="detail-top"><button class="back-btn" id="backGallery">← Qalereyaya qayıt</button><span class="tag">Tədbir haqqında</span></div>
+        <div id="eventDetail"></div>
+      </div></section>
+    </section>
+
+    <!-- QEYDİYYAT -->
+    <section class="view" id="view-registration" data-page="registration">
+      <section class="section soft"><div class="wrap"><div class="section-head"><span class="eyebrow">Qeydiyyat və müraciət</span><h2>İlkin müraciətinizi göndərməyə hazırlaşın.</h2><p>Kurslar, gənclər proqramları və ya hüquqi dəstəklə maraqlananlar üçün müraciət forması.</p></div>
+        <div class="register-wrap">
+          <aside class="register-info"><span class="eyebrow" style="color:var(--gold2)">QHİM müraciət sistemi</span><h2>İlk addımı atın.</h2><p>Məlumatlarınızı doldurun. Müraciət brauzerinizdə saxlanacaq və istəsəniz e-poçt tətbiqinizdə hazır məktub kimi açılacaq.</p><div class="register-points"><div>✓ Əlaqə məlumatları bir formadadır</div><div>✓ Seçdiyiniz istiqamət qeyd olunur</div><div>✓ Müraciətin surətini endirə bilərsiniz</div></div><div class="notice" style="background:#ffffff12;border-color:var(--gold);color:#eadff0">Məxfilik: bu nümunə saytda məlumatlar serverə ötürülmür. Mərkəzə çatdırmaq üçün e-poçt məktubunu özünüz göndərin.</div></aside>
+          <div class="form-card"><h3>İlkin müraciət forması</h3><form id="registrationForm">
+            <div class="form-grid">
+              <div class="field"><label for="firstName">Ad *</label><input id="firstName" name="firstName" autocomplete="given-name" required maxlength="60" placeholder="Adınız"></div>
+              <div class="field"><label for="lastName">Soyad *</label><input id="lastName" name="lastName" autocomplete="family-name" required maxlength="60" placeholder="Soyadınız"></div>
+              <div class="field"><label for="phone">Telefon *</label><input id="phone" name="phone" autocomplete="tel" required type="tel" placeholder="+995 ..."></div>
+              <div class="field"><label for="email">E-poçt</label><input id="email" name="email" autocomplete="email" type="email" placeholder="ad@example.com"></div>
+              <div class="field"><label for="village">Yaşadığınız şəhər / kənd</label><input id="village" name="village" maxlength="100" placeholder="Məsələn, Bolnisi"></div>
+              <div class="field"><label for="interest">Müraciət istiqaməti *</label><select id="interest" name="interest" required><option value="">Seçin</option><option>Azərbaycan dili kursu</option><option>Gürcü dili kursu</option><option>İngilis dili kursu</option><option>Rəsm məşğələləri</option><option>Hüquqi dəstək barədə məlumat</option><option>Gənclər proqramı / tədbir</option><option>Digər</option></select></div>
+              <div class="field full"><label for="message">Əlavə məlumat / sual</label><textarea id="message" name="message" maxlength="1000" placeholder="Müraciətiniz barədə qısa məlumat verin..."></textarea></div>
+            </div>
+            <label class="checkline"><input type="checkbox" id="consent" required><span>Bu prototipin məlumatları yalnız istifadə etdiyim brauzerdə saxladığını və mərkəzə göndərmək üçün e-poçt məktubunu ayrıca göndərməli olduğumu başa düşürəm. *</span></label>
+            <div class="form-actions"><button class="btn dark" type="submit">Müraciəti yadda saxla <span>→</span></button><button class="btn" type="button" id="downloadApps" style="display:none">Yadda saxlanılan müraciətləri endir</button></div>
+            <p class="form-help">* Ulduzlu sahələr vacibdir. Bu forma rəsmi kurs qəbulunu təsdiqləmir; yeni qruplar və şərtlər mərkəz tərəfindən təsdiqlənməlidir.</p>
+            <div class="form-result" id="formResult" role="status" aria-live="polite"></div>
+          </form></div>
+        </div>
+      </div></section>
+    </section>
+
+    <!-- ƏLAQƏ -->
+    <section class="view" id="view-contact" data-page="contact">
+      <div class="contact-hero"><div class="wrap"><span class="eyebrow" style="color:var(--gold2)">Əlaqə</span><h2>Bizimlə əlaqə saxlayın.</h2><p>Kurslar, hüquqi xidmətlər, tərəfdaşlıq və mərkəzin fəaliyyəti barədə məlumat almaq üçün aşağıdakı əlaqə vasitələrindən istifadə edin.</p></div></div>
+      <section class="section"><div class="wrap"><div class="contact-grid">
+        <a class="contact-tile" href="tel:+995571242487"><span class="ci">☎</span><span><small>Telefon</small><b>+995 571 24 24 87</b></span></a>
+        <a class="contact-tile" href="mailto:qhimbolnisi@gmail.com"><span class="ci">✉</span><span><small>E-poçt</small><b>qhimbolnisi@gmail.com</b></span></a>
+        <a class="contact-tile" href="https://www.google.com/maps/search/?api=1&query=Sulxan-Saba+Orbeliani+105%2C+Bolnisi%2C+Georgia" target="_blank" rel="noopener"><span class="ci">⌖</span><span><small>Ünvan</small><b>Sulxan-Saba Orbeliani küçəsi 105, Bolnisi, Gürcüstan</b></span></a>
+        <a class="contact-tile" href="https://diaspor.gov.az/" target="_blank" rel="noopener"><span class="ci">↗</span><span><small>Məlumat mənbəyi</small><b>Azərbaycan Respublikasının Diasporla İş üzrə Dövlət Komitəsi</b></span></a>
+      </div><div class="notice">Bizimlə olmağınıza şad olarıq! ❤️</div></div></section>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap"><div class="footer-top">
+    <a class="footer-brand" href="#home" data-go="home"><span class="brand-mark qhim-official-mark" role="img" aria-label="QHİM-in bannerində istifadə olunan orijinal günəş və dağ nişanı"></span><span class="brand-name">QHİM<small>Qafqaz Hüquq və İnteqrasiya Mərkəzi</small></span></a>
+    <div class="footer-links"><button data-view="home">Ana səhifə</button><button data-view="info">Məlumatlar</button><button data-view="gallery">Qalereya</button><button data-view="registration">Qeydiyyat</button><button data-view="contact">Əlaqə</button></div>
+  </div><div class="footer-note">© <span id="year"></span> QHİM.</div></div></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto görüntüləyici"><button class="lightbox-close" id="lightboxClose" aria-label="Bağla">×</button><img id="lightboxImage" alt="Tədbir fotosu"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const events = [
+      {
+        id:'tika',date:'27 avqust 2026',year:'2026',title:'TİKA nümayəndə heyətinin QHİM-ə səfəri',short:'Görüşdə mərkəzin fəaliyyəti, həyata keçirilən layihələr və 2023-cü ildən davam edən əməkdaşlıq müzakirə olunub.',place:'Bolnisi, QHİM',
+        cover:'https://crossmedia.az/storage/news/2026_08_27/20260827052731_1_1787839972.jpeg',
+        intro:'Türkiyə Əməkdaşlıq və Koordinasiya Agentliyinin (TİKA) Gürcüstandakı İnkişaf Elçiləri proqramı çərçivəsində nümayəndə heyəti Bolnisidə fəaliyyət göstərən Qafqaz Hüquq və İnteqrasiya Mərkəzini ziyarət edib.',
+        description:'Qonaqlar mərkəzin işi və müxtəlif istiqamətlərdə həyata keçirilən layihələrlə tanış olublar. Görüşün əvvəlində direktor Rezo Həsənov 2021-ci ildən davam edən fəaliyyəti, dil kurslarını, təlimləri və gənclərin inkişafına yönəlmiş təşəbbüsləri təqdim edib. Söhbət zamanı TİKA-nın Gürcüstan nümayəndəliyi ilə 2023-cü ildən davam edən əməkdaşlığın nəticələrinə, agentliyin dəstəyi ilə mərkəzin maddi-texniki bazasının yenilənməsinə də toxunulub.',
+        points:['TİKA-nın Gürcüstan üzrə koordinatoru Salih Özer agentliyin layihələri barədə məlumat verib.','Professor Şürəddin Məmmədli qonaqlara müəllifi olduğu kitabları təqdim edib.','Proqramın bədii hissəsində Aşıq Samir çıxış edib.','Qonaqlar Leyla Məmmədəlizadənin rəsm əsərlərindən ibarət sərgi ilə tanış olublar.'],
+        images:['https://crossmedia.az/storage/news/2026_08_27/20260827052731_1_1787839972.jpeg','https://www.24news.ge/24news/uploads/cdb340207c98598b1e03b33daa54c3c3.jpg'],
+        source:'https://crossmedia.az/index.php/az/article/102176',sourceName:'Crossmedia.az — TİKA nümayəndə heyəti Qafqaz Hüquq və İnteqrasiya Mərkəzində olub'
+      },
+      {
+        id:'ai',date:'26 oktyabr 2026',year:'2026',title:'Gənclər üçün süni intellekt və proqramlaşdırma görüşü',short:'Gənclər süni intellektdən məsuliyyətli istifadə, proqramlaşdırma və rəqəmsal imkanlarla tanış olublar.',place:'Bolnisi, QHİM',
+        cover:'https://crossmedia.az/storage/news/2026_10_28/n1_1793198422.jpeg',
+        intro:'Qafqaz Hüquq və İnteqrasiya Mərkəzində gənclərin texnoloji biliklərini artırmaq məqsədilə süni intellekt və proqramlaşdırma mövzusunda maarifləndirici görüş keçirilib.',
+        description:'Mərkəzin təsisçisi və direktoru Rezo Həsənov müasir dövrdə süni intellekt və proqramlaşdırmanın əhəmiyyətindən danışıb. O, süni intellektdən düzgün və məsuliyyətli istifadənin vacibliyini vurğulayaraq texnologiyaların təhsil və gündəlik həyatda yaratdığı imkanlara diqqət çəkib.',
+        points:['İnnovasiya və Texnologiya Mərkəzinin üzvləri Nurlan Bədəlov, Kənan Həsənov və Bağda Əliyeva təqdimatlarla çıxış ediblər.','Süni intellekt və proqramlaşdırmanın əsas xüsusiyyətləri və tətbiq imkanları izah olunub.','İştirakçılar praktiki tapşırıqlar yerinə yetirib, suallar verib və müzakirələr aparıblar.','Təşəbbüs gənclərin texnoloji biliklərini və innovativ həllərə marağını artırmağa yönəlib.'],
+        images:['https://crossmedia.az/storage/news/2026_10_28/n1_1793198422.jpeg','https://crossmedia.az/storage/news/2026_10_28/n_1793198422.jpeg'],
+        source:'https://crossmedia.az/az/article/114178',sourceName:'Crossmedia.az — Süni intellekt və proqramlaşdırma görüşü'
+      },
+      {
+        id:'victory',date:'9 noyabr 2026',year:'2026',title:'Zəfər Günü və Azərbaycan Bayrağı Günü',short:'Mərkəzdə 8 Noyabr – Zəfər Günü və 9 Noyabr – Azərbaycan Bayrağı Gününə həsr olunmuş tədbir keçirilib.',place:'Bolnisi, QHİM',
+        cover:'https://azertag.az/files/2026/3/1794248615277214368.jpg',
+        intro:'Bolnisidə fəaliyyət göstərən Qafqaz Hüquq və İnteqrasiya Mərkəzində 8 Noyabr – Zəfər Günü və 9 Noyabr – Azərbaycan Bayrağı Gününə həsr olunmuş tədbir təşkil edilib.',
+        description:'Tədbir Azərbaycan və Gürcüstanın Dövlət himnlərinin səsləndirilməsi ilə başlayıb. Daha sonra hər iki dövlətin ərazi bütövlüyü və suverenliyi uğrunda həlak olmuş şəxslərin xatirəsi bir dəqiqəlik sükutla yad edilib. Direktor Rezo Həsənov Zəfər Gününün tarixi əhəmiyyətindən danışıb, iştirakçılar isə milli birlik, dövlətçilik və bayrağın rəmzi mənası barədə fikirlərini bölüşüblər.',
+        points:['Gənclər Zəfər Gününə həsr olunmuş şeirlər səsləndiriblər.','“8 Noyabr – Qarabağın Əbədi Zəfəri” adlı inşa müsabiqəsinin iştirakçılarına sertifikatlar təqdim olunub.','Çıxışlarda dövlətçilik, suverenlik və milli-mənəvi dəyərlər mövzuları vurğulanıb.'],
+        images:['https://azertag.az/files/2026/3/1794248615277214368.jpg'],
+        source:'https://special.azertag.az/az/xeber/4503111',sourceName:'AZƏRTAC — Bolnisidə Zəfər Günü və Azərbaycan Bayrağı Gününə həsr olunmuş tədbir'
+      },
+      {
+        id:'yearend',date:'21 iyul 2025',year:'2025',title:'2024–2025-ci tədris ilinin yekun tədbiri',short:'QHİM və icma mərkəzlərinin təxminən 200 müdaviminə təhsil nailiyyətlərinə görə sertifikatlar təqdim olunub.',place:'Gürcüstan, QHİM və icma mərkəzləri',
+        cover:'https://diaspor.gov.az/upload/20250721054406_18b42dd9-b81b-4517-9fca-63eda7fa7994.jpeg',
+        intro:'Qafqaz Hüquq və İnteqrasiya Mərkəzində 2024–2025-ci tədris ilinin başa çatması münasibətilə yekun tədbiri keçirilib.',
+        description:'Tədbir çərçivəsində QHİM-in, eləcə də İmirhəsən və Kəpənəkçi icma mərkəzlərinin 200-ə yaxın müdaviminə müxtəlif göstəricilər əsasında sertifikatlar verilib. Azərbaycan, gürcü və ingilis dili fənləri üzrə uğur göstərən müdavimlərlə yanaşı, həmin fənləri tədris edən müəllimlər də sertifikatlarla təltif olunublar.',
+        points:['Direktor Rezo Həsənov son bir ildə həyata keçirilən hüquqi və təhsil layihələri, təlimlər və qarşıdakı planlar barədə məlumat verib.','Müəllimlər, ictimaiyyət nümayəndələri və tərəfdaşlar mərkəzin gənclərə töhfəsini dəyərləndiriblər.','Bədii hissədə məktəblilərin rəqs, şeir və səhnə çıxışları təqdim olunub.','Tədbirdə iştirakçıların rəsm və əl işlərindən ibarət sərgi də nümayiş etdirilib.'],
+        images:['https://diaspor.gov.az/upload/20250721054406_18b42dd9-b81b-4517-9fca-63eda7fa7994.jpeg','https://diaspor.gov.az/upload/20250721054404_20eaf632-2a8c-4451-978d-d50de6bb8ae4.jpg','https://diaspor.gov.az/upload/20250721054546_cf4e3766-7223-43a4-a57f-80dbae7dba74.jpeg'],
+        source:'https://diaspor.gov.az/az/news-detail/qafqaz-huquq-ve-inteqrasiya-merkezinde-tedris-ilinin-yekun-tedbiri-kecirilib-6021',sourceName:'Diasporla İş üzrə Dövlət Komitəsi — Tədris ilinin yekun tədbiri'
+      },
+      {
+        id:'camp',date:'26 avqust 2024',year:'2024',title:'Bolnisi Gənclərinin I Yay Düşərgəsi',short:'Tandzia kəndində təşkil olunan düşərgəyə Bolnisi rayonunun 20 kəndindən 80-dək gənc və yeniyetmə qatılıb.',place:'Tandzia kəndi, Bolnisi rayonu',
+        cover:'https://diaspor.gov.az/upload/20240826125524_456409756_503366495673983_4348401474478441873_n.jpg',
+        intro:'Qafqaz Hüquq və İnteqrasiya Mərkəzinin təşkilatçılığı ilə Bolnisi Gənclərinin I Yay Düşərgəsi keçirilib. Düşərgə Tandzia kəndində təşkil olunub.',
+        description:'Düşərgədə Bolnisi rayonunun 20 kəndindən 80-dək gənc və yeniyetmə iştirak edib. Açılışda mərkəzin icraçı direktoru Rezo Həsənov iştirakçıları salamlayıb və düşərgənin gələcəkdə daha geniş tərkibdə keçirilməsinə ümid etdiyini bildirib.',
+        points:['İştirakçılar Sulxan-Saba Orbelianinin ev-muzeyini ziyarət edərək tarixi eksponatlarla tanış olublar.','Muzeyin ərazisində ətraf mühitin qorunmasına yönələn təmizlik aksiyası keçirilib.','Gənclər müxtəlif mövzularda təqdimatlar hazırlayıb, milli musiqi və filmlərlə bağlı intellektual oyunlarda iştirak ediblər.','Düşərgə komanda işi, ünsiyyət və birgə fəaliyyət bacarıqlarını inkişaf etdirməyi hədəfləyib.'],
+        images:['https://diaspor.gov.az/upload/20240826125524_456409756_503366495673983_4348401474478441873_n.jpg','https://diaspor.gov.az/upload/20240826125541_Bolnisi_10.jpg','https://diaspor.gov.az/upload/20240826125525_9.jpg'],
+        source:'https://diaspor.gov.az/az/news-detail/bolnisi-genclerinin-i-yay-dusergesi-kecirilib-5032',sourceName:'Diasporla İş üzrə Dövlət Komitəsi — Bolnisi Gənclərinin I Yay Düşərgəsi'
+      }
+    ];
+
+    const viewIds=['home','info','gallery','event','registration','contact'];
+    const navLinks=document.getElementById('navLinks');
+    const menuBtn=document.getElementById('menuBtn');
+    let currentView='home';
+    function showView(name, scroll=true){
+      if(!viewIds.includes(name)) name='home';
+      currentView=name;
+      document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.dataset.page===name));
+      document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===name));
+      navLinks.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); menuBtn.textContent='☰';
+      if(scroll) window.scrollTo({top:0,behavior:'smooth'});
+    }
+    document.addEventListener('click',e=>{
+      const target=e.target.closest('[data-view]');
+      if(target){e.preventDefault();showView(target.dataset.view);}
+      const go=e.target.closest('[data-go]');
+      if(go){e.preventDefault();showView(go.dataset.go);}
+    });
+    menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'×':'☰';});
+    document.getElementById('year').textContent=new Date().getFullYear();
+
+    const eventGrid=document.getElementById('eventGrid');
+    const eventDetail=document.getElementById('eventDetail');
+    function renderEvents(){
+      eventGrid.innerHTML=events.map(ev=>`<article class="event-card"><div class="event-cover"><img src="${ev.cover}" alt="${ev.title}" loading="lazy"><span class="event-date">${ev.date}</span></div><div class="event-content"><h3>${ev.title}</h3><p>${ev.short}</p><button type="button" data-event="${ev.id}">Ətraflı məlumat <span>→</span></button></div></article>`).join('');
+    }
+    function openEvent(id){
+      const ev=events.find(x=>x.id===id); if(!ev)return;
+      eventDetail.innerHTML=`<div class="detail-grid"><div><img class="detail-main-image" src="${ev.cover}" alt="${ev.title}" loading="eager"><div class="detail-gallery"><h3>Tədbirdən fotoşəkillər</h3><div class="thumb-grid">${ev.images.map((src,i)=>`<button type="button" data-lightbox="${src}" aria-label="Foto ${i+1}: ${ev.title}"><img src="${src}" alt="${ev.title} — foto ${i+1}" loading="lazy"></button>`).join('')}</div></div></div><div class="detail-copy"><span class="eyebrow">Tədbir / ${ev.year}</span><h2>${ev.title}</h2><div class="detail-meta"><span class="meta-pill">${ev.date}</span><span class="meta-pill">${ev.place}</span></div><p><strong>${ev.intro}</strong></p><p>${ev.description}</p><ul class="detail-points">${ev.points.map(p=>`<li>${p}</li>`).join('')}</ul><a class="source-link" href="${ev.source}" target="_blank" rel="noopener">Məlumatın ilkin mənbəsini oxu ↗</a><div class="notice">Tarix və tədbirin məzmunu göstərilən açıq mənbədə yayımlanmış məlumatlara əsaslanır. Fotoların yayım hüquqları müvafiq müəllif və mənbələrə aiddir.</div></div></div>`;
+      showView('event');
+    }
+    renderEvents();
+    eventGrid.addEventListener('click',e=>{const b=e.target.closest('[data-event]');if(b)openEvent(b.dataset.event);});
+    document.getElementById('backGallery').addEventListener('click',()=>showView('gallery'));
+
+    const lightbox=document.getElementById('lightbox'),lightboxImage=document.getElementById('lightboxImage');
+    document.addEventListener('click',e=>{const b=e.target.closest('[data-lightbox]');if(b){lightboxImage.src=b.dataset.lightbox;lightbox.classList.add('open');}});
+    function closeLightbox(){lightbox.classList.remove('open');lightboxImage.src='';}
+    document.getElementById('lightboxClose').addEventListener('click',closeLightbox);
+    lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox();});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();});
+
+    const STORAGE_KEY='qhim_local_applications_v1';
+    const form=document.getElementById('registrationForm');
+    const formResult=document.getElementById('formResult');
+    const downloadApps=document.getElementById('downloadApps');
+    function getApplications(){try{return JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]');}catch{return [];}}
+    function updateDownloadButton(){downloadApps.style.display=getApplications().length?'inline-flex':'none';}
+    updateDownloadButton();
+    let lastApplication=null;
+    form.addEventListener('submit',e=>{
+      e.preventDefault();
+      if(!form.reportValidity())return;
+      const data=Object.fromEntries(new FormData(form).entries());
+      data.createdAt=new Date().toISOString();
+      try{
+        const list=getApplications();list.push(data);localStorage.setItem(STORAGE_KEY,JSON.stringify(list));lastApplication=data;updateDownloadButton();
+        const body=[`Ad: ${data.firstName} ${data.lastName}`,`Telefon: ${data.phone}`,`E-poçt: ${data.email||'Göstərilməyib'}`,`Şəhər/kənd: ${data.village||'Göstərilməyib'}`,`Müraciət: ${data.interest}`,`Əlavə məlumat: ${data.message||'Yoxdur'}`].join('\n');
+        const mailto=`mailto:qhimbolnisi@gmail.com?subject=${encodeURIComponent('QHİM — ilkin müraciət')}&body=${encodeURIComponent(body)}`;
+        formResult.innerHTML=`<strong>Müraciət bu brauzerdə yadda saxlanıldı.</strong><br>Mərkəzə çatdırmaq üçün <a href="${mailto}">bu e-poçt məktubunu açın</a> və göndər düyməsini basın. Məktub sizin tərəfinizdən göndərilməyincə mərkəz müraciəti almır.`;
+        formResult.classList.add('show');
+        showToast('Müraciət bu cihazda yadda saxlandı');
+      }catch(err){formResult.textContent='Brauzerin yaddaşına yazmaq mümkün olmadı. Müraciət məlumatlarını e-poçt vasitəsilə göndərməyə çalışın.';formResult.classList.add('show');}
+    });
+    function downloadApplications(){
+      const list=getApplications();if(!list.length){showToast('Yadda saxlanılmış müraciət yoxdur');return;}
+      const blob=new Blob([JSON.stringify(list,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='qhim-muracietler.json';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);showToast('Müraciət məlumatları endirildi');
+    }
+    downloadApps.addEventListener('click',downloadApplications);
+    function showToast(message){const t=document.getElementById('toast');t.textContent=message;t.classList.add('show');clearTimeout(showToast.timer);showToast.timer=setTimeout(()=>t.classList.remove('show'),2600);}
+  
+    document.addEventListener('error', function(event){
+      const img = event.target;
+      if (!(img instanceof HTMLImageElement) || img.dataset.fallbackApplied === '1') return;
+      img.dataset.fallbackApplied = '1';
+      img.classList.add('image-unavailable');
+      img.alt = img.alt || 'Foto hazırda yüklənə bilmir';
+      img.removeAttribute('src');
+    }, true);
+
+  </script>
+</body>
+</html>
